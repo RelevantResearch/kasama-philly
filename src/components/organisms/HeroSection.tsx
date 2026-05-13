@@ -36,7 +36,7 @@ export function HeroSection({ label, title, subtitle, actions }: HeroSectionProp
           </motion.div>
           <motion.h1
             variants={fadeUp}
-            className="font-serif text-5xl md:text-6xl font-semibold leading-tight text-foreground mb-5"
+            className="font-serif text-4xl sm:text-5xl md:text-6xl font-semibold leading-tight text-foreground mb-5"
           >
             {title}
           </motion.h1>

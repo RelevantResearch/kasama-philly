@@ -14,7 +14,7 @@ export function BlogCard({ date, title, excerpt, href }: BlogCardProps) {
       href={href}
       className="group block bg-background rounded-2xl border border-border p-8 hover:shadow-md hover:border-primary/30 transition-all duration-300"
     >
-      <div className="flex items-start gap-5">
+      <div className="flex flex-col sm:flex-row items-start gap-5">
         <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
           <BookOpen className="h-6 w-6 text-primary" />
         </div>
