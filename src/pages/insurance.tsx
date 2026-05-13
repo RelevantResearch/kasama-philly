@@ -33,13 +33,13 @@ export default function Insurance() {
         <div className="container mx-auto px-4 md:px-6 max-w-4xl">
           <motion.div variants={stagger} initial="hidden" whileInView="visible" viewport={{ once: true }}>
             <motion.div variants={fadeUp}><SectionLabel>Coverage</SectionLabel></motion.div>
-            <motion.h2 variants={fadeUp} className="font-serif text-4xl font-semibold mb-5 text-foreground">
+            <motion.h2 variants={fadeUp} className="font-serif text-4xl md:text-5xl font-semibold mb-5 text-foreground">
               Accepting Insurance
             </motion.h2>
             <motion.p variants={fadeUp} className="text-muted-foreground leading-relaxed mb-10 text-lg max-w-2xl">
               At Kasama Philly, we understand that navigating insurance for substance use disorder treatment can be challenging. That's why we accept a wide range of plans. Our substance use disorder treatment — including medication-assisted treatment — is often covered by insurance.
             </motion.p>
-            <motion.h3 variants={fadeUp} className="font-serif text-2xl font-semibold mb-6 text-foreground">
+            <motion.h3 variants={fadeUp} className="font-serif text-2xl md:text-3xl font-semibold mb-6 text-foreground">
               Current Insurances Accepted
             </motion.h3>
             <motion.div variants={stagger} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -54,7 +54,7 @@ export default function Insurance() {
       </section>
 
       {/* No Insurance CTA */}
-      <section className="py-16 md:py-20 bg-muted">
+      <section className="py-10 md:py-20 bg-muted">
         <div className="container mx-auto px-4 md:px-6 max-w-4xl">
           <CTABanner
             title="No Insurance? Contact Us Anyway"

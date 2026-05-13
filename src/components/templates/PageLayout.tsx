@@ -9,7 +9,7 @@ export function PageLayout({ children }: PageLayoutProps) {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
-      <main className="flex-1">{children}</main>
+      <main className="flex-1 overflow-x-hidden">{children}</main>
       <Footer />
     </div>
   );

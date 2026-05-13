@@ -91,7 +91,7 @@ export default function Contact() {
             {/* Left: Info */}
             <motion.div variants={stagger} initial="hidden" whileInView="visible" viewport={{ once: true }}>
               <motion.div variants={fadeUp}><SectionLabel>Get In Touch</SectionLabel></motion.div>
-              <motion.h2 variants={fadeUp} className="font-serif text-3xl font-semibold mb-6 text-foreground">
+              <motion.h2 variants={fadeUp} className="font-serif text-3xl md:text-4xl font-semibold mb-6 text-foreground">
                 Begin Your Journey With Kasama
               </motion.h2>
               <motion.p variants={fadeUp} className="text-muted-foreground leading-relaxed mb-8">

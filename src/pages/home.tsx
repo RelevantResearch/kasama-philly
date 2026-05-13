@@ -103,7 +103,7 @@ export default function Home() {
       {/* About Dr. Tan */}
       <section className="py-20 md:py-28 bg-muted">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-center">
             <motion.div variants={stagger} initial="hidden" whileInView="visible" viewport={{ once: true }}>
               <motion.div variants={fadeUp}><SectionLabel>About Your Doctor</SectionLabel></motion.div>
               <motion.h2 variants={fadeUp} className="font-serif text-4xl md:text-5xl font-semibold mb-6 text-foreground">
@@ -121,7 +121,7 @@ export default function Home() {
                 </Button>
               </motion.div>
             </motion.div>
-            <motion.div variants={stagger} initial="hidden" whileInView="visible" viewport={{ once: true }} className="grid grid-cols-2 gap-4">
+            <motion.div variants={stagger} initial="hidden" whileInView="visible" viewport={{ once: true }} className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {PHILOSOPHIES.map((p, i) => (
                 <motion.div key={p.title} variants={fadeUp}>
                   <PhilosophyCard index={i + 1} title={p.title} description={p.desc} />
@@ -133,7 +133,7 @@ export default function Home() {
       </section>
 
       {/* Insurance CTA */}
-      <section className="py-20 bg-background">
+      <section className="py-12 md:py-20 bg-background">
         <div className="container mx-auto px-4 md:px-6">
           <CTABanner
             label="Accessible Care"
@@ -157,7 +157,7 @@ export default function Home() {
       <TestimonialsSection bg="bg-muted" limit={3} />
 
       {/* Final CTA */}
-      <section className="py-20 bg-background">
+      <section className="py-12 md:py-20 bg-background">
         <div className="container mx-auto px-4 md:px-6 text-center">
           <CTABanner
             title="Begin Your Journey With Kasama"

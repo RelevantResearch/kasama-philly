@@ -47,7 +47,7 @@ export function FAQSection({
           </motion.div>
           <motion.h2
             variants={fadeUp}
-            className="font-serif text-4xl font-semibold mb-10 text-foreground"
+            className="font-serif text-4xl md:text-5xl font-semibold mb-10 text-foreground"
           >
             {title}
           </motion.h2>

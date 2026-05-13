@@ -89,7 +89,7 @@ export default function OurPhilosophy() {
         <div className="container mx-auto px-4 md:px-6 max-w-4xl">
           <motion.div variants={stagger} initial="hidden" whileInView="visible" viewport={{ once: true }}>
             <motion.div variants={fadeUp}><SectionLabel>About Your Doctor</SectionLabel></motion.div>
-            <motion.h2 variants={fadeUp} className="font-serif text-4xl font-semibold mb-6 text-foreground">
+            <motion.h2 variants={fadeUp} className="font-serif text-4xl md:text-5xl font-semibold mb-6 text-foreground">
               Meet Dr. Tan
             </motion.h2>
             <motion.div variants={fadeUp} className="bg-muted rounded-3xl p-8 md:p-12 space-y-5">
@@ -117,7 +117,7 @@ export default function OurPhilosophy() {
         <div className="container mx-auto px-4 md:px-6">
           <motion.div variants={stagger} initial="hidden" whileInView="visible" viewport={{ once: true }}>
             <motion.div variants={fadeUp}><SectionLabel>Areas of Expertise</SectionLabel></motion.div>
-            <motion.h2 variants={fadeUp} className="font-serif text-4xl font-semibold mb-10 text-foreground">
+            <motion.h2 variants={fadeUp} className="font-serif text-4xl md:text-5xl font-semibold mb-10 text-foreground">
               Specialties
             </motion.h2>
             <motion.div variants={stagger} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -136,7 +136,7 @@ export default function OurPhilosophy() {
         <div className="container mx-auto px-4 md:px-6">
           <motion.div variants={stagger} initial="hidden" whileInView="visible" viewport={{ once: true }}>
             <motion.div variants={fadeUp}><SectionLabel>What We Believe</SectionLabel></motion.div>
-            <motion.h2 variants={fadeUp} className="font-serif text-4xl font-semibold mb-10 text-foreground">
+            <motion.h2 variants={fadeUp} className="font-serif text-4xl md:text-5xl font-semibold mb-10 text-foreground">
               Core Philosophies
             </motion.h2>
             <motion.div variants={stagger} className="grid grid-cols-1 md:grid-cols-2 gap-6">

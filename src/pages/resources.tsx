@@ -30,7 +30,7 @@ export default function Resources() {
       <section className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4 md:px-6 max-w-4xl">
           <motion.div variants={stagger} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-            <motion.h2 variants={fadeUp} className="font-serif text-3xl font-semibold mb-5 text-foreground">
+            <motion.h2 variants={fadeUp} className="font-serif text-4xl md:text-5xl font-semibold mb-5 text-foreground">
               Resources for Recovery
             </motion.h2>
             <motion.p variants={fadeUp} className="text-muted-foreground leading-relaxed mb-5 text-lg">
@@ -67,7 +67,7 @@ export default function Resources() {
       <section className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4 md:px-6 max-w-4xl">
           <motion.div variants={stagger} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-            <motion.h2 variants={fadeUp} className="font-serif text-3xl font-semibold mb-8 text-foreground">
+            <motion.h2 variants={fadeUp} className="font-serif text-4xl md:text-5xl font-semibold mb-8 text-foreground">
               Resource Categories
             </motion.h2>
             <motion.div variants={stagger} className="grid grid-cols-1 sm:grid-cols-2 gap-4">

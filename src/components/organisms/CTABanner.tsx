@@ -28,7 +28,7 @@ export function CTABanner({
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className={`rounded-3xl ${bg} p-12 md:p-16 text-center`}
+      className={`rounded-3xl ${bg} p-8 md:p-12 lg:p-16 text-center`}
     >
       {label && (
         <motion.div variants={fadeUp}>

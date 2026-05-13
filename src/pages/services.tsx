@@ -98,7 +98,7 @@ export default function Services() {
               viewport={{ once: true, margin: "-60px" }}
               className="rounded-3xl border border-border bg-card p-8 md:p-12"
             >
-              <div className="flex flex-col md:flex-row gap-8">
+              <div className="flex flex-col md:flex-row gap-4 md:gap-8">
                 <div className="flex-shrink-0">
                   <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center">
                     {service.icon}

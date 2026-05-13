@@ -27,7 +27,7 @@ export function Navbar() {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden lg:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-6 lg:gap-8">
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -48,7 +48,7 @@ export function Navbar() {
 
         {/* Mobile Toggle */}
         <button
-          className="lg:hidden p-2 text-foreground"
+          className="md:hidden p-2 text-foreground"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -57,7 +57,7 @@ export function Navbar() {
 
       {/* Mobile Nav */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden absolute top-20 left-0 w-full bg-background border-b border-border shadow-lg">
+        <div className="md:hidden absolute top-20 left-0 w-full bg-background border-b border-border shadow-lg max-h-[calc(100vh-5rem)] overflow-y-auto">
           <nav className="flex flex-col p-4 space-y-4">
             {navLinks.map((link) => (
               <Link
