@@ -1,4 +1,4 @@
-import { Switch, Route } from "wouter";
+import { Switch, Route, Router } from "wouter";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -14,19 +14,23 @@ import Contact from "@/pages/contact";
 
 const queryClient = new QueryClient();
 
-function Router() {
+function Router_() {
+  // import.meta.env.BASE_URL is "/kasama-philly/" in prod, "/" in dev
+  const base = import.meta.env.BASE_URL.replace(/\/$/, "");
   return (
-    <Switch>
-      <Route path="/" component={Home} />
-      <Route path="/services" component={Services} />
-      <Route path="/our-philosophy" component={OurPhilosophy} />
-      <Route path="/insurance" component={Insurance} />
-      <Route path="/faqs" component={FAQs} />
-      <Route path="/resources" component={Resources} />
-      <Route path="/blog-posts/harm-reduction-in-substance-use-disorder-treatment-kasama-philly" component={BlogHarmReduction} />
-      <Route path="/contact" component={Contact} />
-      <Route component={NotFound} />
-    </Switch>
+    <Router base={base}>
+      <Switch>
+        <Route path="/" component={Home} />
+        <Route path="/services" component={Services} />
+        <Route path="/our-philosophy" component={OurPhilosophy} />
+        <Route path="/insurance" component={Insurance} />
+        <Route path="/faqs" component={FAQs} />
+        <Route path="/resources" component={Resources} />
+        <Route path="/blog-posts/harm-reduction-in-substance-use-disorder-treatment-kasama-philly" component={BlogHarmReduction} />
+        <Route path="/contact" component={Contact} />
+        <Route component={NotFound} />
+      </Switch>
+    </Router>
   );
 }
 
@@ -34,7 +38,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <Router />
+        <Router_ />
         <Toaster />
       </TooltipProvider>
     </QueryClientProvider>
